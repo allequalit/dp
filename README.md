@@ -5,5 +5,6 @@
 sudo bash  <br><br>
 wget https://dp.ael.kr/up.sh <br><br>
 sh up.sh <br><br>
+cd ~/dp <br><br>
 sh start.sh <br><br>
 
