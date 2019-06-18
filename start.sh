@@ -8,7 +8,7 @@ update-rc.d -f iptables defaults
 
 # insserv: warning: script ‘K01iptables’ missing LSB tags and overrides
 # insserv: warning: script ‘iptables’ missing LSB tags and overrides
-# 위와 같은 애러가 표시될 경우 이글(https://linuxkill.tistory.com/88)을 참조하여 문제를 해결해주세요.
+# 위와 같은 애러가 표시될 경우 게시글(https://linuxkill.tistory.com/88)을 참조하여 문제를 해결해주세요.
 
 rm /etc/iptables/rules.v4 & mv rules.v4 /etc/iptables/  
 # 137,138,139,445번 포트를 이용할 경우 /etc/iptables/rules.v4 파일의 49~56번째 줄을 지워주세요.
