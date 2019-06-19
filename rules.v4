@@ -50,10 +50,10 @@ COMMIT
 -A INPUT -p tcp --dport 445 -j DROP
 -A INPUT -p udp --dport 137:139 -j DROP
 -A INPUT -p udp --dport 445 -j DROP
--A OUTPUT -p tcp --dport 137:139 -j DROP
--A OUTPUT -p tcp --dport 445 -j DROP
--A OUTPUT -p udp --dport 137:139 -j DROP
--A OUTPUT -p udp --dport 445 -j DROP
+-A OUTPUT -p tcp --sport 137:139 -j DROP
+-A OUTPUT -p tcp --sport 445 -j DROP
+-A OUTPUT -p udp --sport 137:139 -j DROP
+-A OUTPUT -p udp --sport 445 -j DROP
 
 -A port-scanning -p tcp -m tcp --tcp-flags FIN,SYN,RST,ACK RST -m limit --limit 1/sec --limit-burst 2 -j RETURN
 -A port-scanning -j DROP
