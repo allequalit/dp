@@ -23,6 +23,10 @@
 -A PREROUTING -p tcp --tcp-flags ALL SYN,FIN,PSH,URG -j DROP 
 -A PREROUTING -p tcp --tcp-flags ALL SYN,RST,ACK,FIN,URG -j DROP  
 
+-A PREROUTING -p udp -m limit --limit 6/hour --limit-burst 1 -m length --length 0:28 -j LOG --log-prefix "Firewall>0 length udp"
+-A PREROUTING -p udp -m length --length 0:28 -m comment --comment "Drop UDP packet with no content" -j DROP
+-A PREROUTING -p tcp -m multiport --dports 23,79 -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG SYN -m recent --set --name blacklist_180 --mask 255.255.255.255 --rsource -j DROP
+
 -A PREROUTING -p tcp --dport 137:139 -j DROP
 -A POSTROUTING -p tcp --sport 137:139 -j DROP
 -A PREROUTING -p tcp --dport 445 -j DROP
@@ -51,9 +55,6 @@ COMMIT
 :OUTPUT ACCEPT [3715:17598698]
 :port-scanning - [0:0]
 
--A PREROUTING -p tcp -m multiport --dports 23,79 -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG SYN -m recent --set --name blacklist_180 --mask 255.255.255.255 --rsource -j DROP
--A PREROUTING -p udp -m limit --limit 6/hour --limit-burst 1 -m length --length 0:28 -j LOG --log-prefix "Firewall>0 length udp"
--A PREROUTING -p udp -m length --length 0:28 -m comment --comment "Drop UDP packet with no content" -j DROP
 -A port-scanning -p tcp -m tcp --tcp-flags FIN,SYN,RST,ACK RST -m limit --limit 1/sec --limit-burst 2 -j RETURN
 -A port-scanning -j DROP
 COMMIT
