@@ -36,3 +36,7 @@ mkswap /swapspace & swapon /swapspace
 apt-get autoremove -y 
 
 # 불필요한 패키지를 제거 합니다.
+
+sudo reboot
+
+# 시스템을 재부팅합니다.
