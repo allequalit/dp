@@ -4,6 +4,7 @@ apt-get update
 
 rm /etc/sysctl.conf & mv sysctl.conf /etc/
 
+# 리눅스 커널 설정 파일 (/etc/sysctl.conf)을 덮어씌우는 작업을 수행합니다.
 # 네트워크 최적화 및 성능 최적화, ip스푸핑 방어, tcpbbr(https://cloud.google.com/blog/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster),  
 # syn flooding 공격 방어등이 적용(?)되어있습니다.
 
