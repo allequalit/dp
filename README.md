@@ -1,5 +1,5 @@
 # 아트디완 S (아꾸르 트위치 디도스 완화 .sh) 
-실행 가능 운영체제 : ubuntu server 16.04 LTS 이상 ubuntu Desktop 16.04 LTS 이상 <br><br>
+실행 가능 운영체제 : Ubuntu Server 16.04 LTS 이상, Ubuntu Desktop 16.04 LTS 이상 <br><br>
 # 주의 사항
 재배포를 금지합니다. <br><br>
 이스크립트(아트디완 s)를 실행하여 발생한 피해는 책입지지 않습니다. <br><br>
