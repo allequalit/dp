@@ -5,7 +5,6 @@
 :FORWARD ACCEPT [34498:47233324]
 :OUTPUT ACCEPT [8175:48323437]
 :POSTROUTING ACCEPT [42673:95556761]
-
 -A PREROUTING -m conntrack --ctstate INVALID -j DROP
 -A PREROUTING -p tcp ! --syn -m conntrack --ctstate NEW -j DROP
 -A PREROUTING -p tcp -m conntrack --ctstate NEW -m tcpmss ! --mss 536:65535 -j DROP
@@ -54,7 +53,6 @@ COMMIT
 :FORWARD ACCEPT [14253:17279719]
 :OUTPUT ACCEPT [3715:17598698]
 :port-scanning - [0:0]
-
 -A port-scanning -p tcp -m tcp --tcp-flags FIN,SYN,RST,ACK RST -m limit --limit 1/sec --limit-burst 2 -j RETURN
 -A port-scanning -j DROP
 COMMIT
