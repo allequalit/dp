@@ -1,5 +1,6 @@
 apt-get update # 업데이트 목록을 갱신합니다
 rm /etc/sysctl.conf & mv sysctl.conf /etc/
+# 네트워크 최적화 및 성능 최적화(?), ip스푸핑 방어
 
 apt-get install iptables-persistent -y # iptables-persistent 설치
 cp /usr/share/netfilter-persistent/plugins.d/15-ip4tables /etc/init.d/iptables
