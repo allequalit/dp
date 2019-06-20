@@ -19,7 +19,7 @@ update-rc.d -f iptables defaults
 
 rm /etc/iptables/rules.v4 & mv rules.v4 /etc/iptables/  
 
-# tcp 기반 디도스공격을 완화 및 137,138,139,445(smb 포트)를 차단해줍니다. (https://javapipe.com/blog/iptables-ddos-protection/) 
+# tcp 기반 디도스공격을 완화 및 137,138,139,445(smb 포트)를 차단니다. (https://javapipe.com/blog/iptables-ddos-protection/) 
 # 137,138,139,445번 포트를 이용할 경우 /etc/iptables/rules.v4 파일의 30~38번째 줄을 지워주세요.
 
 apt-get install zram-config -y 
