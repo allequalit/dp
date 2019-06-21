@@ -2,11 +2,6 @@ apt-get update
 
 # 업데이트 목록을 갱신합니다
 
-mkdir /etc/bu/ & cp /etc/sysctl.conf /etc/bu/ & cp /etc/iptables/rules.v4 /etc/bu/
-
-# sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일)을 /etc/bu 폴더에 백업합니다.
-# 백업 폴더 위치 : /etc/bu/
-
 cat sysctl.conf >> /etc/sysctl.conf
 
 # /etc/sysctl.conf/ (리눅스 커널 설정 파일)에 내용을 추가합니다.
