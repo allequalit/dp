@@ -10,7 +10,8 @@ cat sysctl.conf >> /etc/sysctl.conf
 
 apt-get install iptables-persistent -y 
 cp /usr/share/netfilter-persistent/plugins.d/15-ip4tables /etc/init.d/iptables
-/etc/init.d/iptables start & /etc/init.d/iptables flush
+/etc/init.d/iptables start 
+/etc/init.d/iptables flush
 update-rc.d -f iptables defaults
 
 # 우분투 iptables 서비스 활성화
@@ -33,7 +34,8 @@ apt-get install zram-config -y
 
 fallocate -l 3G /swapspace 
 chmod 600 /swapspace 
-mkswap /swapspace & swapon /swapspace
+mkswap /swapspace 
+swapon /swapspace
 
 # 디스크 여유 공간이 12기가 이하이거나 가상메모리를 추가를 원하지 않는 경우 29~31번째 줄을 지워주세요.
 
