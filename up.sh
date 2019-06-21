@@ -21,7 +21,3 @@ mv dp /dp/
 chmod +x /dp/dp/up.sh & chmod +x /dp/dp/start.sh 
 
 # 아트디완s 소스코드를 /dp/ 디렉토리로 이동, start.sh, up.sh에 실행권한 부여
-
-do-release-upgrade
-
-# 우분투 운영체제를 최신버전으로 업그레이드 (ex. ubuntu server 16.04 -> ubuntu server 18.04)
