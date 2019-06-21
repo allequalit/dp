@@ -9,15 +9,15 @@ exit
 fi
 done
 
-mkdir /dp/ & apt-get update & apt-get upgrade -y & apt-get dist-upgrade -y 
+apt-get update & apt-get upgrade -y & apt-get dist-upgrade -y
 
-# /dp/디렉토리 생성 및 업그레이드 가능한 모든 패키지 업그레이드등을 수행
+# 업데이트 목록 갱신 및 업그레이드 가능한 모든 패키지 업그레이드등을 수행합니다,
 
 apt-get install git -y & git clone https://github.com/allequalit/dp.git
 
 # git 프로그램 설치 및 아트디완s 소스코드 다운로드
 
-mv dp /dp/
-chmod +x /dp/dp/up.sh & chmod +x /dp/dp/start.sh 
+mv dp /etc/
+chmod +x /etc/dp/up.sh & chmod +x /etc/dp/start.sh
 
-# 아트디완s 소스코드를 /dp/ 디렉토리로 이동, start.sh, up.sh에 실행권한 부여
+# 아트디완s 소스코드를 /etc/dp/ 디렉토리로 이동, start.sh, up.sh에 실행권한 부여
