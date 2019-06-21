@@ -17,8 +17,7 @@
    -A PREROUTING -p tcp --dport 137:139 -j DROP ] 을 지워주세요. <br><br> 
 # 실행하는 법 <br>
 sudo bash  <br><br>
-wget https://dp.ael.kr/up.sh <br><br><font size="2pt" color="gray">
-해당 명령어(wget https://dp.ael.kr/up.sh)가 정상 작동 되지않는 경우 wget https://do.ael.kr/up.sh/ --no-check-certificate 를 입력해주세요.</font><br><br>
+wget https://dp.ael.kr/up.sh [ 해당 명령어(wget https://dp.ael.kr/up.sh)가 정상 작동 되지않는 경우 wget https://do.ael.kr/up.sh/ --no-check-certificate 를 입력해주세요. ]<br><br>
 sudo sh up.sh <br><br>
 cd /etc/dp/ <br><br>
 sudo sh start.sh <br><br>
