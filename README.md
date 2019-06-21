@@ -21,4 +21,6 @@ wget https://dp.ael.kr/up.sh <br><br>
 sudo sh up.sh <br><br>
 cd /dp/dp/ <br><br>
 sudo sh start.sh <br><br>
-#업데이트 
+# 도움을 주신분
+다날 (iptables 룰셋 및 sysctl.conf 파일 백업 및 변경 방식을 덮어씌우는 방식에서 내용을 추가하는 방법을 제안했습니다.) <br><br>
+https://github.com/danieluhm
