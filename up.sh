@@ -9,7 +9,8 @@ exit
 fi
 done
 
-mkdir /etc/bu/ & cp /etc/sysctl.conf /etc/bu/ & cp /etc/iptables/rules.v4 /etc/bu/
+mkdir /etc/bu/ 
+cp /etc/sysctl.conf /etc/bu/ & cp /etc/iptables/rules.v4 /etc/bu/
 
 # sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일)을 /etc/bu 폴더에 백업합니다.
 # 백업 폴더 위치 : /etc/bu/
