@@ -22,5 +22,5 @@ sudo sh up.sh <br><br>
 cd /dp/dp/ <br><br>
 sudo sh start.sh <br><br>
 # 도움을 주신분
-다날 [sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일) 백업 및 변경 방식을 덮어씌우는 방식에서 내용을 추가하는 방법을 제안했습니다.] <br><br>
+다날 [ sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일) 백업 및 변경 방식을 덮어씌우는 방식에서 내용을 추가하는 방법을 제안했습니다. ] <br><br>
 https://github.com/danieluhm
