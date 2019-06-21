@@ -37,7 +37,7 @@ chmod 600 /swapspace
 mkswap /swapspace 
 swapon /swapspace
 
-# 디스크 여유 공간이 12기가 이하이거나 가상메모리를 추가를 원하지 않는 경우 29~31번째 줄을 지워주세요.
+# 디스크 여유 공간이 12기가 이하이거나 가상메모리를 추가를 원하지 않는 경우 35~38번째 줄을 지워주세요.
 
 apt-get autoremove -y 
 
