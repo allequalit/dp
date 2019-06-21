@@ -13,8 +13,7 @@
    -A POSTROUTING -p tcp --sport 445 -j DROP <br><br>
    -A PREROUTING -p tcp --dport 445 -j DROP <br><br>
    -A POSTROUTING -p tcp --sport 137:139 -j DROP <br><br>
-   -A PREROUTING -p tcp --dport 137:139 -j DROP ]을 지워주세요.
-  
+   -A PREROUTING -p tcp --dport 137:139 -j DROP ]을 지워주세요. <br><br> 
 오픈소스 규정은 그때마다 다르고 라이센스 규정을 잘 읽어보라는 조언 <br><br>
 덕분에 라이센스 정하고있는중입니다. (유력 : MIT 라이센스, GPL 라이센스, 비어웨어 라이센스) <br>
 # 실행하는 법 <br>
