@@ -2,9 +2,14 @@ apt-get update
 
 # 업데이트 목록을 갱신합니다
 
-rm /etc/sysctl.conf & mv sysctl.conf /etc/
+mkdir /etc/bu/ & cp /etc/sysctl.conf /etc/bu/ & cp /etc/iptables/rules.v4 /etc/bu/
 
-# 리눅스 커널 설정 파일 (/etc/sysctl.conf)을 덮어씌우는 작업을 수행합니다.
+# sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일)을 /etc/bu 폴더에 백업합니다.
+# 백업 폴더 위치 : /etc/bu/
+
+cat sysctl.conf >> /etc/sysctl.conf
+
+# /etc/sysctl.conf/ (리눅스 커널 설정 파일)에 내용을 추가합니다.
 # 네트워크 최적화 및 성능 최적화, ip스푸핑 방어, tcpbbr(https://cloud.google.com/blog/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster),  
 # syn flooding 공격 방어등이 적용(?)되어있습니다.
 
@@ -18,10 +23,14 @@ update-rc.d -f iptables defaults
 # insserv: warning: script ‘iptables’ missing LSB tags and overrides
 # 위와 같은 애러가 표시될 경우 게시글(https://idchowto.com/?p=31482)을 참조하여 문제를 해결해주세요.
 
-rm /etc/iptables/rules.v4 & mv rules.v4 /etc/iptables/  
+cat rules.v4 >> /etc/iptables/rules.v4
 
-# tcp 기반 디도스공격을 완화 및 137,138,139,445(smb 포트)를 차단니다. (https://javapipe.com/blog/iptables-ddos-protection/) 
-# 137,138,139,445번 포트를 이용할 경우 /etc/iptables/rules.v4 파일의 30~38번째 줄을 지워주세요.
+# rules.v4 (iptables 설정 파일)에 내용을 추가합니다.
+# tcp 기반 디도스공격을 완화 및 137,138,139,445(smb) 포트를 차단니다. (https://javapipe.com/blog/iptables-ddos-protection/) 
+# 137,138,139,445 포트를 이용할 경우 /etc/iptables/rules.v4 파일의 [ -A PREROUTING -p tcp --dport 137:139 -j DROP,  
+# -A POSTROUTING -p tcp --sport 137:139 -j DROP, -A PREROUTING -p tcp --dport 445 -j DROP, -A POSTROUTING -p tcp --sport 445 -j DROP
+# -A PREROUTING -p udp --dport 137:139 -j DROP, -A POSTROUTING -p udp --sport 137:139 -j DROP
+# -A PREROUTING -p udp --dport 445 -j DROP, -A POSTROUTING -p udp --sport 445 -j DROP ] 내용을 지워주세요.
 
 apt-get install zram-config -y 
 
