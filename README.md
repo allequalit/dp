@@ -5,7 +5,7 @@
 # 주의 사항
 재배포를 금지합니다. <br><br>
 이스크립트(아트디완 s)를 실행하여 발생한 피해는 책입지지 않습니다. <br><br> 적용이 완료되면 시스템을 재부팅합니다. <br><br>
- 137,138,139,445(smb) 포트를 차단합니다.  137,138,139,445(smb) 포트를 이용할 경우 <br><br>
+ 137,138,139,445(smb) 포트를 차단합니다.   137,138,139,445(smb) 포트를 이용할 경우 <br><br>
  해당 내용 [ -A POSTROUTING -p udp --sport 445 -j DROP <br><br>
    -A PREROUTING -p udp --dport 445 -j DROP <br><br>
    -A POSTROUTING -p udp --sport 137:139 -j DROP <br><br>
