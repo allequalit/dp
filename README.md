@@ -1,5 +1,5 @@
 # 아트디완 S (아꾸르 트위치 디도스 완화 .sh) 
-디도스 완화, 네트워크 최적화 및 성능 최적화, synflooding 공격 방어, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) 등을 적용해주는 (.sh) 입니다. <br><br>
+디도스 완화, 네트워크 최적화 및 성능 최적화, synflooding 공격 방어, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) 등을 적용해주는 프로그램(.sh) 입니다. <br><br>
 프로그램은 오픈소스이며 비상업적, 상업적 용도로 사용가능하지만 재배포는 금지되어있습니다. <br><br>
 실행 가능 운영체제 : Ubuntu 18.04 LTS 이상 <br><br>
 우분투 운영체제 버전이 Ubuntu 18.04 LTS 이하인 경우 업그레이드를 진행 하신후 아트디완s를 실행해 주시기 바랍니다.
@@ -21,3 +21,4 @@ wget https://dp.ael.kr/up.sh <br><br>
 sudo sh up.sh <br><br>
 cd /dp/dp/ <br><br>
 sudo sh start.sh <br><br>
+#업데이트 
