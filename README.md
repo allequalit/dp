@@ -15,11 +15,12 @@
    -A PREROUTING -p tcp --dport 445 -j DROP<br><br>
    -A POSTROUTING -p tcp --sport 137:139 -j DROP <br><br>
    -A PREROUTING -p tcp --dport 137:139 -j DROP ] 을 지워주세요. <br><br> 
-   실행 중 프로그램이 멈추는 현상이 해결되었습니다. <br><br>
+   실행 중 프로그램이 멈추는 현상이 해결되었습니다. <br><br> 
+    오류가있을 경우 dpkg --configure -a 입력해주세요. <br><br>
 # 실행하는 법 <br>
 sudo bash  <br><br>
 wget https://dp.ael.kr/up.sh [ 해당 명령어(wget https://dp.ael.kr/up.sh)가 정상 작동 되지않는 경우 wget https://dp.ael.kr/up.sh --no-check-certificate 를 입력해주세요. ]<br><br>
-sudo sh up.sh <br><br>
+sudo sh up.sh <br><br> 
 cd /etc/dp/ <br><br>
 sudo sh start.sh <br><br>
 # 도움을 주신분
