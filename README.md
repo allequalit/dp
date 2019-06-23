@@ -5,6 +5,7 @@
 우분투 운영체제 버전이 Ubuntu 18.04 LTS 이하인 경우 업그레이드를 진행 하신후 아트디완s를 실행해 주시기 바랍니다.
 # 주의 사항
 아트디완 s 프로그램을 실행하면 sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일)이 /etc/bu 폴더에 백업됩니다. <br><br>
+
 이스크립트(아트디완 s)를 실행하여 발생한 피해는 책입지지 않습니다. <br><br> 적용이 완료되면 시스템을 재부팅합니다. <br><br>
  137,138,139,445(smb) 포트를 차단합니다. <br><br> 137,138,139,445(smb) 포트를 이용할 경우 <br><br>
  해당 내용 [ -A POSTROUTING -p udp --sport 445 -j DROP<br><br>
@@ -25,3 +26,5 @@ cd /etc/dp/ <br><br>
 sudo sh start.sh <br><br>
 # 도움을 주신분
 <a href="https://github.com/danieluhm">다날</a> [ sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일) 백업 및 파일 수정 방식 변경(덮어씌우는 방식에서 내용을 추가하는 방법) 제안하셨습니다. ] <br><br>
+#적용된 사이트 
+Fc Seoul Lite
