@@ -26,5 +26,5 @@ cd /etc/dp/ <br><br>
 sudo sh start.sh <br><br>
 # 도움을 주신분
 <a href="https://github.com/danieluhm">다날</a> [ sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일) 백업 및 파일 수정 방식 변경(덮어씌우는 방식에서 내용을 추가하는 방법) 제안하셨습니다. ] <br><br>
-#적용된 사이트 
+# 적용된 사이트 
 Fc Seoul Lite
