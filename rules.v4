@@ -27,16 +27,6 @@
 -A PREROUTING -p udp -m length --length 0:28 -m comment --comment "Drop UDP packet with no content" -j DROP
 -A PREROUTING -p tcp -m multiport --dports 23,79 -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG SYN -m recent --set --name blacklist_180 --mask 255.255.255.255 --rsource -j DROP
 
--A PREROUTING -p tcp --dport 137:139 -j DROP
--A POSTROUTING -p tcp --sport 137:139 -j DROP
--A PREROUTING -p tcp --dport 445 -j DROP
--A POSTROUTING -p tcp --sport 445 -j DROP
-
--A PREROUTING -p udp --dport 137:139 -j DROP
--A POSTROUTING -p udp --sport 137:139 -j DROP
--A PREROUTING -p udp --dport 445 -j DROP
--A POSTROUTING -p udp --sport 445 -j DROP
-
 -A PREROUTING -s 224.0.0.0/3 -j DROP
 -A PREROUTING -s 169.254.0.0/16 -j DROP
 -A PREROUTING -s 172.16.0.0/12 -j DROP
