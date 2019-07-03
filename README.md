@@ -1,3 +1,5 @@
+# 한국어 
+
 # 아트디완 S (아꾸르 트위치 디도스 완화 .sh) 
 디도스 완화, 네트워크 최적화 및 성능 최적화, synflooding 공격 방어, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) 등을 적용해주는 프로그램(.sh) 입니다. <br><br>
 프로그램은 오픈소스이며 비상업적, 상업적 용도로 사용가능하지만 재배포는 금지되어있습니다. <br><br>
@@ -27,3 +29,5 @@ sudo sh start.sh <br><br>
 <a href="https://github.com/danieluhm">다날</a> [ sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일) 백업 및 파일 수정 방식 변경(덮어씌우는 방식에서 내용을 추가하는 방법) 제안하셨습니다. ] <br><br>
 # 적용된 사이트 
 FC S**** L****
+
+# 영어
