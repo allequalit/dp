@@ -22,7 +22,7 @@ update-rc.d -f iptables defaults
 cat rules.v4 >> /etc/iptables/rules.v4
 
 # rules.v4 (iptables 설정 파일)에 내용을 추가합니다.
-# tcp 기반 디도스공격을 완화 및 ICMP를 차단합니디.
+# tcp 기반 디도스공격을 완화 및 ICMP등을 차단합니디.
 
 apt-get install zram-config -y 
 
