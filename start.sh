@@ -22,11 +22,7 @@ update-rc.d -f iptables defaults
 cat rules.v4 >> /etc/iptables/rules.v4
 
 # rules.v4 (iptables 설정 파일)에 내용을 추가합니다.
-# tcp 기반 디도스공격을 완화 및 137,138,139,445(smb) 포트를 차단니다. (https://javapipe.com/blog/iptables-ddos-protection/) 
-# 137,138,139,445 포트를 이용할 경우 /etc/iptables/rules.v4 파일의 [ -A PREROUTING -p tcp --dport 137:139 -j DROP,  
-# -A POSTROUTING -p tcp --sport 137:139 -j DROP, -A PREROUTING -p tcp --dport 445 -j DROP, -A POSTROUTING -p tcp --sport 445 -j DROP
-# -A PREROUTING -p udp --dport 137:139 -j DROP, -A POSTROUTING -p udp --sport 137:139 -j DROP
-# -A PREROUTING -p udp --dport 445 -j DROP, -A POSTROUTING -p udp --sport 445 -j DROP ] 내용을 지워주세요.
+# tcp 기반 디도스공격을 완화 및 ICMP를 차단합니디.
 
 apt-get install zram-config -y 
 
@@ -37,7 +33,7 @@ chmod 600 /swapspace
 mkswap /swapspace 
 swapon /swapspace
 
-# 디스크 여유 공간이 12기가 이하이거나 가상메모리를 추가를 원하지 않는 경우 35~38번째 줄을 지워주세요.
+# 디스크 여유 공간이 12기가 이하이거나 가상메모리를 추가를 원하지 않는 경우 31~34번째 줄을 지워주세요.
 
 apt-get autoremove -y 
 
