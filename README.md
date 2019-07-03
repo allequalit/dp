@@ -1,4 +1,4 @@
-# 영어
+# 영어 (English)
 
 # Art DDoS Mitigation .sh
 The program(.sh) applies to DDoS mitigation, network optimization, and performance optimization, synflooding attack defense, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) <br><br>
@@ -18,7 +18,7 @@ sudo sh start.sh <br><br>
 # the man who helped
 <a href="https://github.com/danieluhm">다날</a> [ You suggested changing the way sysctl.conf (Linux kernel settings file), rules.v4 (Iptables settings file) backup and file modification (how to add content from overwriting). ] <br><br>
 
-# 한국어 
+# 한국어 (Korean)
 
 # 아트디완 S (아꾸르 트위치 디도스 완화 .sh) 
 디도스 완화, 네트워크 최적화 및 성능 최적화, synflooding 공격 방어, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) 등을 적용해주는 프로그램(.sh) 입니다. <br><br>
