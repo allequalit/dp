@@ -30,7 +30,7 @@ cat rules.v4 >> /etc/iptables/rules.v4
 
 apt-get install zram-config -y 
 
-# zram (https://moordev.tistory.com/92) 설치 
+#zram 설치 
 
 fallocate -l 3G /swapspace 
 chmod 600 /swapspace 
