@@ -17,7 +17,6 @@ cp /etc/sysctl.conf /etc/bu/ & cp /etc/iptables/rules.v4 /etc/bu/
 
 apt-get update 
 apt-get upgrade -y 
-apt-get dist-upgrade -y
 
 # 업데이트 목록 갱신 및 업그레이드 가능한 모든 패키지 업그레이드등을 수행합니다,
 
