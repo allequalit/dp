@@ -1,7 +1,7 @@
 # 영어 (English)
 
 # DDoS Mitigation .sh
-The program(.sh) applies to DDoS mitigation, network optimization, and performance optimization, synflooding attack defense, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) <br><br>
+The program(.sh) applies to DDoS mitigation, network optimization, synflooding attack defense, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) <br><br>
 The program is open source and can be used for non-commercial and commercial purposes, but redistribution is prohibited. <br><br>
 Runable Operating Systems: Ubuntu 18.04 LTS and Up <br><br>
 If your Ubuntu operating system is below Ubuntu 18.04 LTS, please run DDoS Mitigation program after you upgrade.
@@ -21,7 +21,7 @@ sudo sh start.sh <br><br>
 # 한국어 (Korean)
 
 # 마냐디완 S (마냐 디도스 완화 .sh) 
-디도스 완화, 네트워크 최적화 및 성능 최적화, synflooding 공격 방어, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) 등을 적용해주는 프로그램(.sh) 입니다. <br><br>
+디도스 완화, 네트워크 최적화, synflooding 공격 방어, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) 등을 적용해주는 프로그램(.sh) 입니다. <br><br>
 프로그램은 오픈소스이며 비상업적, 상업적 용도로 사용가능하지만 재배포는 금지되어있습니다. <br><br>
 실행 가능 운영체제 : Ubuntu 16.04 LTS 이상 <br><br>
 우분투 운영체제 버전이 Ubuntu 16.04 LTS 이하인 경우 업그레이드를 진행 하신후 마냐디완s를 실행해 주시기 바랍니다.
