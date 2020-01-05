@@ -23,15 +23,15 @@ sudo sh start.sh <br><br>
 # 마냐디완 S (마냐 디도스 완화 .sh) 
 디도스 완화, 네트워크 최적화 및 성능 최적화, synflooding 공격 방어, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) 등을 적용해주는 프로그램(.sh) 입니다. <br><br>
 프로그램은 오픈소스이며 비상업적, 상업적 용도로 사용가능하지만 재배포는 금지되어있습니다. <br><br>
-실행 가능 운영체제 : Ubuntu 18.04 LTS 이상 <br><br>
-우분투 운영체제 버전이 Ubuntu 18.04 LTS 이하인 경우 업그레이드를 진행 하신후 마냐디완s를 실행해 주시기 바랍니다.
+실행 가능 운영체제 : Ubuntu 16.04 LTS 이상 <br><br>
+우분투 운영체제 버전이 Ubuntu 16.04 LTS 이하인 경우 업그레이드를 진행 하신후 마냐디완s를 실행해 주시기 바랍니다.
 # 주의 사항
 마냐디완 s 프로그램을 실행하면 sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일)이 /etc/bu 폴더에 백업됩니다. <br><br>
 
 이스크립트(마냐디완 s)를 실행하여 발생한 피해는 책입지지 않습니다. <br><br> 적용이 완료되면 시스템을 재부팅합니다. <br><br>
     오류가있을 경우 dpkg --configure -a 입력해주세요. <br><br>
 # 실행하는 법 <br>
-sudo wget https://dp.ael.kr/up.sh [ 해당 명령어(wget https://dp.ael.kr/up.sh)가 정상 작동 되지않는 경우 wget https://dp.ael.kr/up.sh --no-check-certificate 를 입력해주세요. ]<br><br>
+wget https://dp.ael.kr/up.sh --no-check-certificate <br><br>
 sudo sh up.sh <br><br> 
 sudo cd /etc/dp/ <br><br>
 sudo sh start.sh <br><br>
