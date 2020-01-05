@@ -11,7 +11,7 @@ When you run the  DDoS Mitigation program, sysctl.conf (Linux kernel settings fi
 Damage caused by running DDoS Mitigation will not be blamed. <br><br> Reboot the system when the application is complete. <br><br>
 Enter dpkg --configure -a for errors. <br><br>
 # How to Run <br>
-sudo wget https://dp.ael.kr/up.sh [ If the command (wget https://dp.ael.kr/up.sh) is not working properly, enter wget https://dp.ael.kr/up.sh --no-check-certificate.]<br><br>
+wget https://dp.ael.kr/up.sh --no-check-certificate <br><br>
 sudo sh up.sh <br><br> 
 sudo cd /etc/dp/ <br><br>
 sudo sh start.sh <br><br>
