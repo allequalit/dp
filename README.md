@@ -3,8 +3,8 @@
 # DDoS Mitigation .sh
 The program(.sh) applies to DDoS mitigation, network optimization, synflooding attack defense, zram, tcpbbr (https://cloudblog.withgoogle.com/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster/amp/) <br><br>
 The program is open source and can be used for non-commercial and commercial purposes, but redistribution is prohibited. <br><br>
-Runable Operating Systems: Ubuntu 18.04 LTS and Up <br><br>
-If your Ubuntu operating system is below Ubuntu 18.04 LTS, please run DDoS Mitigation program after you upgrade.
+Runable Operating Systems: Ubuntu 16.04 LTS and Up <br><br>
+If your Ubuntu operating system is below Ubuntu 16.04 LTS, please run DDoS Mitigation program after you upgrade.
 # precautions
 When you run the  DDoS Mitigation program, sysctl.conf (Linux kernel settings file), rules.v4 (Itptables settings file) are backed up to the /etc/bu folder. <br><br>
 
@@ -28,7 +28,7 @@ sudo sh start.sh <br><br>
 # 주의 사항
 마냐디완 s 프로그램을 실행하면 sysctl.conf (리눅스 커널 설정 파일), rules.v4 (iptables 설정 파일)이 /etc/bu 폴더에 백업됩니다. <br><br>
 
-이스크립트(마냐디완 s)를 실행하여 발생한 피해는 책입지지 않습니다. <br><br> 적용이 완료되면 시스템을 재부팅합니다. <br><br>
+이프로그램(마냐디완 s)을 실행하여 발생한 피해는 책입지지 않습니다. <br><br> 적용이 완료되면 시스템을 재부팅합니다. <br><br>
     오류가있을 경우 dpkg --configure -a 입력해주세요. <br><br>
 # 실행하는 법 <br>
 wget https://dp.ael.kr/up.sh --no-check-certificate <br><br>
