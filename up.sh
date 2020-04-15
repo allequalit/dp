@@ -1,5 +1,5 @@
 while [ 1 ]; do
-echo -n "\nDamage caused by the execution of this script is not responsible. Do you agree?\n\n이스크립트(아트디완 s)를 실행하여 발생한 피해는 책입지지 않습니다. 동의 하십니까? (y/n) : "
+echo -n "\nDamage caused by the execution of this script is not responsible. Do you agree?\n\n이스크립트(마냐디완 s PRO)를 실행하여 발생한 피해는 책입지지 않습니다. 동의 하십니까? (y/n) : "
 read a
 if [ x$a = "xy" ]
 then
