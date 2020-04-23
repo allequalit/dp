@@ -354,8 +354,6 @@
 -A PREROUTING -s 209.97.168.52 -j DROP
 # ------------------------------------------
 
-# 유효하지 않는 패킷을 차단합니다. 문제가 있을경우 358번째줄을 제거해주세요.
- -A PREROUTING -m conntrack --ctstate INVALID -j DROP
 
 # 동기화되지 않은 새 패킷을 차단합니다. 문제가 있을경우 361번째줄을 제거해주세요.
  -A PREROUTING -p tcp ! --syn -m conntrack --ctstate NEW -j DROP 
