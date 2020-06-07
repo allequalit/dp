@@ -367,8 +367,8 @@
 # 조각난 패킷을 차단합니다.
  -A PREROUTING -f -j DROP
 
--A PREROUTING -p tcp -m length --length 0:28 -j DROP
--A PREROUTING -p udp -m length --length 0:28 -j DROP
+-A PREROUTING -p tcp -m length --length 0:10 -j DROP
+-A PREROUTING -p udp -m length --length 0:10 -j DROP
 
 # 가짜 tcp flags가 있는 패킷을 차단합니다. ------------------------------------------------------------
 -A PREROUTING -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,PSH,URG -j DROP
