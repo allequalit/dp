@@ -1,0 +1,3 @@
+@reboot sudo sh /etc/start/df.sh;
+1 * * * * sudo sh /etc/start/doi.sh;
+10 3 * * 2 sudo sh /etc/start/yo.sh;
