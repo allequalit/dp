@@ -1,1 +1,1 @@
-1 * * * * sudo sh /etc/start/doi.sh;
+5 * * * * sudo sh /etc/start/doi.sh;
