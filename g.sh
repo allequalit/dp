@@ -1,1 +1,1 @@
-rm -r ~/back;cp -r /var/lib/tomcat8/webapps/ ~/back/;echo "백업 완료";
+rm -r /root/back;cp -r /var/lib/tomcat8/webapps/ /root/back/;echo "백업 완료";
