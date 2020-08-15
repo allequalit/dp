@@ -1,1 +1,2 @@
-cp -r ~/back/ROOT/ /var/lib/tomcat8/webapps/;chown -R tomcat8:tomcat8 /var/lib/tomcat8/webapps/;echo "복구 완료";
+tar -xvf /root/back/backup.tar -C /var/lib/tomcat8/
+echo "복구 완료";
