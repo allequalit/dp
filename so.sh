@@ -791,4 +791,7 @@ ip route add blackhole 192.251.231.0/24;
 ip route add blackhole 193.201.232.0/22;
 ip route add blackhole 194.169.172.0/22;
 ip route add blackhole 196.192.192.0/18;
+ip route add blackhole 125.137.213.11
+ip route add blackhole 211.222.75.168
+ip route add blackhole 211.210.29.0/24
 iptables -t mangle -A PREROUTING -p IGMP -j DROP;
