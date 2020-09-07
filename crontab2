@@ -2,3 +2,4 @@
 1 * * * * sudo sh /etc/start/doi.sh;
 10 3 * * 2 sudo sh /etc/start/yo.sh;
 40 * * * * sh /etc/start/backup.sh;
+10 4 * * 1 sudo sh /etc/start/remove.sh;
