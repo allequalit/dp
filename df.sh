@@ -852,3 +852,4 @@ ip route add blackhole 130.211.32.0/19;
 ip route add blackhole 130.211.4.0/22;
 ip route add blackhole 130.211.8.0/21;
 iptables -t mangle -A PREROUTING -p IGMP -j DROP;
+sleep 20;systemctl stop systemd-timesyncd;
