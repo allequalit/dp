@@ -1,1 +1,2 @@
-ln -s /disk2/원하는 폴더명 /home/ubuntu/Desktop/원하는 폴더명
+echo 1 > /proc/sys/vm/drop_caches;
+/disk2 원하는 명령어
