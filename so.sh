@@ -2409,5 +2409,6 @@ ip route add blackhole 60.172.163.0/24
 ip route add blackhole 60.171.163.0/24
 ip route add blackhole 2405:84c0:9710::/44
 ip route add blackhole 211.197.11.16
+ip route add blackhole 203.218.167.0/24
 iptables -t mangle -A PREROUTING -p IGMP -j DROP;
 sleep 20;systemctl stop systemd-timesyncd;
